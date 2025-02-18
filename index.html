@@ -1,480 +1,383 @@
-<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manali Tanna - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-<!DOCTYPE html> 
-<html lang="en"> 
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0"> 
-    <title>My Portfolio</title> 
-    <link rel="stylesheet"
-        href= 
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity= 
-"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="responsive.css"> 
-</head> 
+        .header {
+            background: linear-gradient(135deg, #4a90e2, #357abd);
+            color: white;
+            padding: 100px 20px 70px;
+            text-align: center;
+        }
 
-<body> 
-    <!-- Navbar header section -->
-    <header class="header"> 
-        <nav class="navbar"> 
-            <div class="logo"> 
-                <h2 class="logo-heading">Emrit Diyal</h2> 
-            </div> 
-            <div class="hamburger" id="hamburger"> 
-                <i class="fas fa-bars hamburger-icon"></i> 
-                <i class="fas fa-times cross-icon"></i> 
-            </div> 
-            <div class="menu"> 
-                <ul class="menu-list"> 
-                    <li class="menu-list-items"> 
-                        <a class="links" href="#home"> 
-                            Home 
-                        </a> 
-                    </li> 
-                    <li class="menu-list-items"> 
-                        <a class="links" href="#portfolio"> 
-                            Portfolio 
-                        </a> 
-                    </li> 
-                    <li class="menu-list-items"> 
-                        <a class="links" href="#about"> 
-                            About 
-                        </a> 
-                    </li> 
-                    <li class="menu-list-items"> 
-                        <a class="links" href="#services"> 
-                            Services 
-                        </a> 
-                    </li> 
-                    <li class="menu-list-items"> 
-                        <a class="links" href="#contact"> 
-                            Contact Me 
-                        </a> 
-                    </li> 
-                </ul> 
-            </div> 
-        </nav> 
-    </header> 
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+        }
 
-    <!-- Main hero banner -->
-    <section id="home" class="hero"> 
-        <div class="intro"> 
-            <div class="headings"> 
-                <h3 class="greet-heading">Hello, I'm</h3> 
-                <h1 class="my-heading">Emrit Diyal</h1> 
-                <h4 class="sub-heading"> 
-                    A Software Engineer with 3 years of Experience. 
-                </h4> 
-            </div> 
-            <div class="intro-buttons"> 
-                <button class="btn common-btn">Hire Me</button> 
-                <button class="btn ghost-btn">Get Resume</button> 
-            </div> 
-        </div> 
-    </section> 
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio"> 
-        <div class="portfolio-heading"> 
-            <h1 class="my-heading text-center">Featured Portfolio</h1> 
-        </div> 
-        <div class="portfolio-content"> 
-            <div class="my-row"> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/designImage2.avif"
-                                alt="Web Design Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text">Web Design</h3> 
-                        <p class="small-para blue-text">Designing</p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/webDevelopment2.avif"
-                                alt="Web Development Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Web Development 
-                        </h3> 
-                        <p class="small-para blue-text">Development</p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/SEOImage2.avif" alt="SEO Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text">SEO</h3> 
-                        <p class="small-para blue-text">Optimization</p> 
-                    </div> 
-                </div> 
-            </div> 
-            <div class="my-row"> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/contentImage2.avif"
-                                alt="Content Writting Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Content Writing 
-                        </h3> 
-                        <p class="small-para blue-text">Writing</p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/wordpressImage2.avif"
-                                alt="Wordpress Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            WordPress Dev 
-                        </h3> 
-                        <p class="small-para blue-text"> 
-                            Content Management System 
-                        </p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/videoEditing2.avif"
-                                alt="Video Editing Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Video Editing 
-                        </h3> 
-                        <p class="small-para blue-text">Editing</p> 
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-    </section> 
+        .nav {
+            background: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-    <!-- About Section -->
-    <section id="about" class="about"> 
-        <div class="about-text"> 
-            <h1 class="my-heading">About Me</h1> 
-            <p class="lead-para"> 
-                GeeksforGeeks is a leading platform 
-                that provides computer science 
-                resources and coding challenges for 
-                programmers and technology 
-                enthusiasts, along with interview 
-                and exam preparations for upcoming 
-                aspirants. With a strong emphasis on 
-                enhancing coding skills and knowledge, 
-                it has become a trusted destination 
-                for over 12 million plus registered 
-                users worldwide. The platform offers 
-                a vast collection of tutorials, practice 
-                problems, interview tutorials, articles, 
-                and courses, covering various domains 
-                of computer science. 
-            </p> 
-            <p> 
-                Our exceptional mentors hailing from top 
-                colleges & organizations have the 
-                ability to guide you on a journey from 
-                the humble beginnings of coding to 
-                the pinnacle of expertise. Under their 
-                guidance watch your skills flourish 
-                as we lay the foundation and help you 
-                conquer the world of coding. 
-            </p> 
-        </div> 
-        <div class="about-image"> 
-            <img src="./Images/heroImg2.avif" alt="About Image"> 
-        </div> 
-    </section> 
+        .nav-links {
+            text-align: center;
+        }
 
-    <!-- Services Section -->
-    <section class="services" id="services"> 
-        <div class="services-heading"> 
-            <h1 class="my-heading text-center">My Services</h1> 
-        </div> 
-        <div class="services-content"> 
-            <div class="my-row"> 
-                <div class="my-col"> 
-                    <div class="my-card"> 
-                        <div class="icon"> 
-                            <i class="fas fa-paint-brush"></i> 
-                        </div> 
-                        <h3 class="greet-heading blue-text">Web Design</h3> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card"> 
-                        <div class="icon"> 
-                            <i class="fa-solid fa-code"></i> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Web Development 
-                        </h3> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card"> 
-                        <div class="icon"> 
-                            <i class="fas fa-chart-line"></i> 
-                        </div> 
-                        <h3 class="greet-heading blue-text">SEO</h3> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                    </div> 
-                </div> 
-            </div> 
-            <div class="my-row"> 
-                <div class="my-col"> 
-                    <div class="my-card"> 
-                        <div class="icon"> 
-                            <i class="fas fa-quote-left"></i> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Content Writting 
-                        </h3> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining of websites. 
-                            It includes aspects such as web design, 
-                            web publishing, web programming, and 
-                            database management. It is the creation 
-                            of an application that works over the 
-                            internet i.e. websites. 
-                        </p> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining of websites. 
-                            It includes aspects such as web design, 
-                            web publishing, web programming, and 
-                            database management. It is the creation of an 
-                            application that works over the internet i.e. 
-                            websites. 
-                        </p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card"> 
-                        <div class="icon"> 
-                            <i class="fab fa-wordpress-simple"></i> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            WordPress Dev 
-                        </h3> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining of websites. 
-                            It includes aspects such as web design, 
-                            web publishing, web programming, and 
-                            database management. It is the creation 
-                            of an application that works over the 
-                            internet i.e. websites. 
-                        </p> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card"> 
-                        <div class="icon"> 
-                            <i class="fas fa-video"></i> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Video Editing 
-                        </h3> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                        <p class="small-para"> 
-                            Web development refers to the creating, 
-                            building, and maintaining 
-                            of websites. It includes aspects such as 
-                            web design, web publishing, 
-                            web programming, and database management. 
-                            It is the creation of an 
-                            application that works over the internet 
-                            i.e. websites. 
-                        </p> 
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-    </section> 
+        .nav-links a {
+            color: #4a90e2;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
 
-    <!-- Contact me section -->
-    <section class="contact" id="contact"> 
-        <div class="contact-heading"> 
-            <h1 class="my-heading text-center">Contact Me</h1> 
-        </div> 
-        <div class="contact-content"> 
-            <div class="contact-form-container"> 
-                <h1 class="greet-heading">Get In Touch</h1> 
-                <form class="contact-form"> 
-                    <input class="form-controls" type="text"
-                        placeholder="Your Name"> 
-                    <input class="form-controls" type="text"
-                        placeholder="Your Email"> 
-                    <input class="form-controls" type="text"
-                        placeholder="Your Phone"> 
-                    <textarea class="form-controls"
-                            placeholder="Write your message"
-                            name="message" id="" cols="30"
-                            rows="10"> 
-                    </textarea> 
-                    <input class="form-btn btn common-btn"
-                        type="submit" value="Send Message"> 
-                </form> 
-            </div> 
-            <div class="contact-details"> 
-                <h1 class="greet-heading">My Contact Details</h1> 
-                <div class="details"> 
-                    <h5 class="contact-heading">EMAIL</h5> 
-                    <p class="contact-text">example@gmail.com</p> 
-                </div> 
-                <div class="details"> 
-                    <h5 class="contact-heading">PHONE</h5> 
-                    <p class="contact-text">+91 0123456789</p> 
-                </div> 
-                <div class="details"> 
-                    <h5 class="contact-heading">FAX</h5> 
-                    <p class="contact-text">+91 0123456789</p> 
-                </div> 
-                <div class="details"> 
-                    <h5 class="contact-heading">ADDRESS</h5> 
-                    <p class="contact-text">San Francisco, CA</p> 
-                    <p>4th Floor8 Lower</p> 
-                    <p>San Francisco street, M1 50F</p> 
-                </div> 
-            </div> 
-        </div> 
-    </section> 
+        .nav-links a:hover {
+            color: #357abd;
+        }
 
-    <!-- Footer section -->
-    <footer class="footer"> 
-        <div class="footer-content text-center"> 
-            <h4> 
-                Copyright © 2023 All rights reserved | 
-                This portfolio website template is created 
-                by GeeksforGeeks. 
-            </h4> 
-            <div class="social-links"> 
-                <div class="footer-menu"> 
-                    <ul class="footer-menu-list"> 
-                        <li class="footer-list-items"> 
-                            <a class="footer-links" href="#"> 
-                                <i class="fab fa-facebook-f"></i> 
-                            </a> 
-                        </li> 
-                        <li class="footer-list-items"> 
-                            <a class="footer-links" href="#"> 
-                                <i class="fab fa-twitter"></i> 
-                            </a> 
-                        </li> 
-                        <li class="footer-list-items"> 
-                            <a class="footer-links" href="#"> 
-                                <i class="fab fa-instagram"></i> 
-                            </a> 
-                        </li> 
-                        <li class="footer-list-items"> 
-                            <a class="footer-links" href="#"> 
-                                <i class="fab fa-linkedin-in"></i> 
-                            </a> 
-                        </li> 
-                    </ul> 
-                </div> 
-            </div> 
-        </div> 
-    </footer> 
+        .section {
+            background: white;
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
 
-    <script src= 
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
-        integrity= 
-"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"> 
-    </script> 
-    <script src="script.js"></script> 
-</body> 
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
 
+        h2 {
+            color: #4a90e2;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin: 15px 0 5px;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 8px 15px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .contact-info a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+        }
+
+        .date {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            background: #f0f7ff;
+            color: #4a90e2;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        .project {
+            border-left: 3px solid #4a90e2;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 60px 20px 40px;
+            }
+            
+            .profile-img {
+                width: 300px;
+                height: 300px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .nav-links a {
+                display: inline-block;
+                margin: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="Data/manali.jpeg" alt="Manali Tanna" class="profile-img">
+        <h1>Manali Tanna</h1>
+        <p>Software Engineer - AI/ML</p>
+        <div class="contact-info">
+            <a href="mailto:manalitanna@nyu.edu">manalitanna@nyu.edu</a>
+            <a href="tel:+14254358335">+1 425-435-8335</a>
+            <a href="https://linkedin.com/in/manalitanna">LinkedIn</a>
+            <a href="https://github.com/ManaliTanna">GitHub</a>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I'm a passionate Machine Learning Engineer and Full Stack Developer currently pursuing my Master's in Computer Science at NYU. With a strong foundation in AI/ML and software development, I strive to create innovative solutions that make a meaningful impact.</p>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>TPM Intern - Google</h3>
+                <p class="date">June 2024 – Aug 2024</p>
+                <p>• Saved the StratOps team 80 hours per quarter by leveraging GoogleSQL to develop a robust, scalable, and automated data analysis workflow, providing insights into resource and time allocation for programs.</p>
+                <p>• Proactively implemented an analytics dashboard providing faster access to real-time insights for leadership; it is being used by 9+ decision-makers across business units in Core Data for strategic planning every quarter.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Software Engineering Intern - GoTo Inc.</h3>
+                <p class="date">Jan 2023 – Jun 2023</p>
+                <p>• Reduced customer checkout time by 50% by implementing an address autofill feature using Java EE, JavaScript, and Google Places API, enhancing the user experience in GoTo's service checkout process.</p>
+                <p>• Drove the adoption phase for migration to the Common Identity Platform, by integrating APIs and refactoring legacy user management code; delivering a high-priority project ahead of schedule in a ambiguous environment.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Mental Health Status Classification</h3>
+                <p class="date">Nov 2024 - Dec 2024</p>
+                <p>Fine-tuned BERT with optimized training configurations for mental health classification, achieving 92% accuracy and 97% F1 score across 7 categories. Developed a real-time inference web app using Streamlit.</p>
+                <div class="skills">
+                    <span class="skill-tag">Deep Learning</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">Transformers</span>
+                    <span class="skill-tag">NLTK</span>
+                    <span class="skill-tag">streamlit</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Machine Learning Model Deployment</h3>
+                <p class="date">Jan 2024 - May 2024</p>
+                <p>Improved a baseline model (accuracy: 67.64% , inference time: 1.28s) through architecture selection and hyperparameter tuning. Trained a Xception model (accuracy-focused: 89.75%, inference time: 1.19s) and a MobileNetV2 model (latency-focused: 86.47%, inference time: 0.05s).</p>
+                <p>Deployed a highly scalable and available system by experimenting with various Kubernetes configurations. Achieved horizontal scaling and optimized resource efficiency by balancing the accuracy vs. latency trade-off.</p>
+                <div class="skills">
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Chameleon Cloud</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">Tensorflow</span>
+                    <span class="skill-tag">Keras</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3>H1B Visa Data Visualization</h3>
+                <p class="date">Oct 2024 - Nov 2024</p>
+                <p>Developed an interactive dashboard by allowing users to hover over a map and click for in-depth insights on H1B visa approvals. Drilled down by USA states, top sponsoring companies, and approval trends over time.</p>
+                <div class="skills">
+                    <span class="skill-tag">Information Visualization</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Altair</span>
+                    <span class="skill-tag">GeoPandas</span>
+                    <span class="skill-tag">Matplotlib</span>
+                    <span class="skill-tag">Vega Editor</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3>FurBaby</h3>
+                <p class="date">Aug 2023 - Dec 2023</p>
+                <p>Developed RESTful API using Django and a responsive react frontend for a full-stack pet sitting application.</p>
+                <p></p>
+                <div class="skills">
+                    <span class="skill-tag">Information Visualization</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Altair</span>
+                    <span class="skill-tag">GeoPandas</span>
+                    <span class="skill-tag">Matplotlib</span>
+                    <span class="skill-tag">Vega Editor</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="experience-item">
+                <h3>New York University</h3>
+                <p class="date">Aug 2023 - May 2025</p>
+                <p>Masters in Computer Science</p>
+                <p>GPA: 3.9/4.0</p>
+                <p>Courses: Software Engineering, Data structures and Algorithms, Artificial Intelligence, Machine Learning, Database systems, Big Data, Deep Learning, Foundations of Data Science, Information Visualization, Machine Learning Operations</p>
+            </div>
+            <div class="experience-item">
+                <h3>P.E.S University</h3>
+                <p class="date">Aug 2019 - May 2023</p>
+                <p>Bachelors in Computer Science</p>
+                <p>Specialization in Machine Intelligence and Data Science</p>
+                <p>GPA: 8.9/10.0</p>
+                <p>Courses: Data Structures, Algorithms, Database Management System, Operating System, Computer Networks, Web Development, Unix Shell programming, Microprocessors and Computer Architecture, Machine Intelligence, Data Analytics, Big Data, Software Engineering, Compiler Design, Object Oriented Analysis and Design with JAVA, Cloud Computing, Information Retrieval, Deep Learning</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <h3>Soft Skills</h3>
+            <div class="skills">
+                <span class="skill-tag">Independent Execution</span>
+                <span class="skill-tag">Rapid Learner</span>
+                <span class="skill-tag">Proactive in resolving roadblocks</span>
+                <span class="skill-tag">Navigating Ambiguity</span>
+                <span class="skill-tag">Communicating Up</span>
+                <span class="skill-tag">Getting Buy-ins</span>
+                <span class="skill-tag">Recieving Feedback</span>
+                <span class="skill-tag">Stakeholder Management</span>
+                <span class="skill-tag">Conflict Resolution</span>
+                <span class="skill-tag">Organized</span>
+                <span class="skill-tag">Teamwork and Leadership</span>
+                <span class="skill-tag">Responsible</span>
+                <span class="skill-tag">Emotional Intelligence</span>
+                <span class="skill-tag">Work Ethic</span>
+            </div>
+            <h3>Languages</h3>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">Dart</span>
+            </div>
+            <h3>Databases</h3>
+            <div class="skills">
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">Oracle DB</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Firebase</span>
+            </div>
+            <h3>SWE</h3>
+            <div class="skills">
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">GCP</span>
+                <span class="skill-tag">Agile</span>
+                <span class="skill-tag">Scrum</span>
+                <span class="skill-tag">Maven</span>
+                <span class="skill-tag">Springboot</span>
+                <span class="skill-tag">Django</span>
+                <span class="skill-tag">REST API's</span>
+                <span class="skill-tag">React JS</span>
+                <span class="skill-tag">node.js</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">Debugging</span>
+            </div>
+            <h3>AI/ML</h3>
+            <div class="skills">
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Kubernetes</span>
+                <span class="skill-tag">Keras</span>
+                <span class="skill-tag">Generative Adversial Networks (GAN)</span>
+                <span class="skill-tag">Convolutional Nueral Networks</span>
+                <span class="skill-tag">Chameleon Cloud</span>
+            </div>
+            <h3>Data Science and Analytics</h3>
+            <div class="skills">
+                <span class="skill-tag">Hadoop</span>
+                <span class="skill-tag">Spark</span>
+                <span class="skill-tag">Vega Altair</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">numpy</span>
+                <span class="skill-tag">matplotlib</span>
+            </div>
+            <h3>Tools</h3>
+            <div class="skills">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Postman</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Eclipse</span>
+                <span class="skill-tag">Jupyter Notebook</span>
+                <span class="skill-tag">Jenkins</span>
+                <span class="skill-tag">Zendesk</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Bitbucket</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Manali Tanna. All rights reserved.</p>
+    </footer>
+</body>
 </html>
